@@ -1,0 +1,5 @@
+package com.delivery.sergiolog.api.assembler;
+
+public class AssembleOccurrence {
+
+}

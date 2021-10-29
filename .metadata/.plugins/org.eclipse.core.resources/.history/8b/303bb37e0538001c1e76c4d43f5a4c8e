@@ -1,0 +1,9 @@
+package com.serasa.experian.testcontroller;
+
+public class ControllerClientTest {
+
+	private ControllerClient controllerClient;
+	
+	controllerC
+	
+}

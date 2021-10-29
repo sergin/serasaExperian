@@ -1,0 +1,25 @@
+package com.serasa.experian.domain.model;
+
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@Embeddable
+public class Addressee {
+
+	@Column(name = "adress_name")
+	private String name;
+	@Column(name = "adress_log")
+	private String address;
+	@Column(name = "adress_number")
+	private String number;
+	@Column(name = "adress_complement")
+	private String complement;
+	@Column(name = "adress_district")
+	private String district;
+	
+}

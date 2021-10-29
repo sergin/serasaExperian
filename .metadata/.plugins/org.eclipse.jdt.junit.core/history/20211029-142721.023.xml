@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SergioLogApiApplicationTests" project="sergioLog-api" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.serasa.experian.SergioLogApiApplicationTests" time="0.984" displayname="SergioLogApiApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.serasa.experian.SergioLogApiApplicationTests]">
+    <testcase name="deveRetornarNaoEncontrado" classname="com.serasa.experian.SergioLogApiApplicationTests" time="0.899" displayname="deveRetornarNaoEncontrado()" uniqueid="[engine:junit-jupiter]/[class:com.serasa.experian.SergioLogApiApplicationTests]/[method:deveRetornarNaoEncontrado()]"/>
+    <testcase name="contextLoads" classname="com.serasa.experian.SergioLogApiApplicationTests" time="0.084" displayname="contextLoads()" uniqueid="[engine:junit-jupiter]/[class:com.serasa.experian.SergioLogApiApplicationTests]/[method:contextLoads()]"/>
+  </testsuite>
+</testrun>

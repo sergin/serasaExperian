@@ -1,0 +1,27 @@
+package com.delivery.sergiolog.domain.service;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.delivery.sergiolog.domain.model.Delivery;
+import com.delivery.sergiolog.domain.model.DeliveryStatus;
+import com.delivery.sergiolog.domain.repository.DeliveryRepository;
+import com.sun.org.apache.xerces.internal.util.Status;
+
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
+@Service
+public class ServiceDeliveryRequest {
+
+	private DeliveryRepository deliveryRepository;
+	
+	@Transactional
+	private Delivery request(Delivery delivery) {
+		
+		delivery.setDeliveryStatus(DeliveryStatus.PENDING);
+		
+		return deliveryRepository.save(delivery);
+	}
+	
+}

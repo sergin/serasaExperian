@@ -1,0 +1,22 @@
+package com.serasa.experian;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.serasa.experian.api.controller.ControllerClient;
+
+@SpringBootTest
+class SergioLogApiApplicationTests {
+	
+	ControllerClient controllerClient;
+
+	@Test
+	void contextLoads() {
+	}
+
+	@BeforeEach
+	public void listClient() {
+		controllerClient.list();
+	}
+}

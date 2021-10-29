@@ -1,0 +1,29 @@
+1635097014199	Delete element
+1635097020490	Delete element
+1635097025219	Delete element
+1635097033069	Delete element
+1635097722421	Delete element
+1635099783936	Rename resource 'V002__create-table-delivery.sql'
+1635100030122	Rename resource 'V003__create-table-delivery.sql'
+1635373874920	Rename package 'com.delivery.sergiolog.api.controller'
+1635373894459	Rename package 'com.delivery.sergiolog.domain.exception'
+1635373910233	Rename package 'com.delivery.sergiolog.domain.model'
+1635373961427	Rename package 'com.delivery.sergiolog.api.exceptionhandler'
+1635373979118	Rename package 'com.delivery.sergiolog.domain.repository'
+1635373996342	Rename package 'com.delivery.sergiolog.domain.service'
+1635376399289	Delete element
+1635376401332	Delete element
+1635376513878	Delete element
+1635376556228	Delete element
+1635377038718	Delete element
+1635377042110	Delete element
+1635377046659	Delete element
+1635377050879	Delete element
+1635377055271	Delete element
+1635435679338	Delete element
+1635435682461	Delete element
+1635435685063	Delete element
+1635435688476	Delete element
+1635435692817	Delete element
+1635435756036	Delete element
+1635435820641	Rename package 'com.delivery.sergiolog'

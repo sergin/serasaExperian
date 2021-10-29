@@ -1,0 +1,20 @@
+create table delivery(
+	id bigint not null auto_increment,
+    id_client bigint not null,
+    taxa decimal(10,2) not null,
+    status varchar(20) not null,
+    delivery_date datetime not null,
+    final_date datetime,
+
+	adress_name varchar(60) not null,
+	adress_log varchar (255) not null,
+	adress_number varchar (30) not null,
+	adress_complement varchar (60) not null,
+	adress_district varchar (30) not null,
+	
+	primary key (id)
+
+);
+
+alter table delivery add constraint fk_delivery_client
+foreign key (id_client) references client (id)	

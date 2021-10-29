@@ -1,0 +1,19 @@
+package com.delivery.sergiolog.domain.model;
+
+import javax.persistence.Embeddable;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@Embeddable
+public class Addressee {
+
+	private String name;
+	private String address;
+	private String number;
+	private String complement;
+	private String district;
+	
+}

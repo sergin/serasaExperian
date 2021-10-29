@@ -1,0 +1,55 @@
+package com.serasa.experian;
+
+import static org.mockito.Mockito.when;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.HttpStatus;
+
+import com.serasa.experian.api.controller.ControllerClient;
+
+import io.restassured.http.ContentType;
+import io.restassured.module.mockmvc.RestAssuredMockMvc;
+
+@SpringBootTest
+class SergioLogApiApplicationTests {
+	
+	@Autowired
+	ControllerClient controllerClient;
+	
+
+	/*@Test
+	void contextLoads() {
+	}*/
+	
+	@Test
+	void contextLoads() {
+		
+		when(this.controllerClient.listClientById(3L))
+		.thenReturn(controllerClient.listClientById(3L));
+		
+		RestAssuredMockMvc.given()
+		.accept(ContentType.JSON)
+		.when()
+		.get("/clients/{codigo}", 1L)
+		.then()
+		.statusCode(HttpStatus.OK.value());
+		
+	}
+
+	@Test
+	public void deveRetornarNaoEncontrado() {
+		when(this.controllerClient.listClientById(20L))
+		.thenReturn(null);
+		
+		RestAssuredMockMvc.given()
+		.accept(ContentType.JSON)
+		.when()
+		.get("/clients/{codigo}", 5L)
+		.then()
+		.statusCode(HttpStatus.NOT_FOUND.value());
+		
+	}
+}

@@ -1,0 +1,11 @@
+package com.delivery.sergiolog.domain.model;
+
+public class Addressee {
+
+	private String name;
+	private String address;
+	private String number;
+	private String complement;
+	private String district;
+	
+}

@@ -1,0 +1,9 @@
+package com.serasa.experian.domain.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.serasa.experian.domain.model.Delivery;
+
+public interface DeliveryRepository extends JpaRepository<Delivery, Long>{
+
+}
